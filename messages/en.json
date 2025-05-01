@@ -1,0 +1,65 @@
+{
+  "HeroSection": {
+    "greetings": "Heyy, I'm Cristopher!",
+    "title": "Front-end Developer",
+    "description": "I have worked on a variety of front-end projects, from small websites to large web applications. This hands-on experience has allowed me to develop skills that help me create digital solutions.",
+    "resume": "My Resume"
+  },
+  "HeaderSection": {
+    "about": "About me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "english_select": "English",
+    "portuguese_select": "Portuguese"
+  },
+  "AboutSection": {
+    "title": "Connecting purposes with",
+    "title_shiny": "digital presence and personality",
+    "item_list_1": "Agile and scalable development",
+    "item_list_2": "Creative and innovative solutions",
+    "item_list_3": "Modern and responsive design",
+    "item_list_4": "Secure and reliable applications",
+    "item_list_5": "Optimized performance",
+    "item_list_6": "Hosting and deployment",
+    "title_shiny_2": "Who am I?",
+    "blur_text_1": "I'm Cristopher Martarello Derossi, with over 2 years of professional experience in web application development and digital experiences. I have also worked on different projects to enhance my skills as a developer.",
+    "blur_text_2": "I'm currently in my final year of Computer Science at the Federal Institute of Santa Catarina (IFSC) and I complement my studies with preparatory courses in web development.",
+    "timeline_item_1": "First contact with programming",
+    "timeline_item_2": "Completed English course at FISK",
+    "timeline_item_3": "Started Computer Science at IFSC & Projects",
+    "timeline_item_4": "Front-end Developer and Support at Box360, a software company",
+    "timeline_item_5": "Professional courses, projects, and thesis",
+    "title_shiny_3": "My Expertises",
+    "accordion_title_1": "Development",
+    "accordion_content_1": "I'm a software developer focused on Front-end but also skilled in Back-end. I work on building modern websites and developing systems, turning ideas into real products.",
+    "accordion_title_2": "UI/UX Design",
+    "accordion_content_2": "Although I have knowledge of both stacks, my strength lies in Front-end. I am detail-oriented and creative when coding modern, intuitive, and responsive applications, always aiming for the best user experience.",
+    "accordion_title_3": "Collaboration and Society",
+    "accordion_content_3": "I believe that great solutions are born from teamwork and collaboration, combining technology and purpose to create real impact in society."
+  },
+  "ProjectsSection": {
+    "title_shiny_1": "Selected Projects",
+    "description": "Through this selection of featured projects, get to know a bit of my work and the technologies used.",
+    "project_title_1": "FSW Food",
+    "project_description_1": "This project was one of the most challenging and a professional milestone. It was my first highly complex project that gave a huge boost to my knowledge. \n\n The main idea of this project is to simulate a web food ordering application, similar to IFood. \n\n The client can choose products, manage a shopping cart, access different restaurants, favorite restaurants, and track their orders.",
+    "project_title_2": "FSW Finance AI",
+    "project_description_2": "Finance AI is a platform that enables users to better manage their finances, having full control over their expenses, income, and investments! \n\n It also features the generation of intelligent financial reports through integration with a conversational AI API and offers subscription plans using Stripe integration.\n\nIt is a complete web application for Desktop with multiple layers of complexity and various integrations to ensure its functionality.",
+    "project_title_3": "Bankboost",
+    "project_description_3": "In this project, I worked on creating a landing page for a digital bank, focusing on a modern and visually appealing proposal. \n\n With the knowledge acquired, I was able to apply modern and harmonious styling, mostly based on SCSS and guided by Figma prototypes. \n\nAdditionally, I focused on responsiveness and handling a variety of devices, ensuring a good user experience no matter which device is used to view the page.",
+    "project_title_4": "Cloudboost",
+    "project_description_4": "For this project, I also worked on creating a landing page, but this time for a marketing company, maintaining a minimalist and modern focus. \n\n The styling was mostly based on SCSS and guided by Figma prototypes. \n\n Responsiveness was also a key focus of the project, ensuring that the user has a great experience regardless of the access device.",
+    "project_title_5": "Quiz Project",
+    "project_description_5": "My first project built with React.js! \n\n Observing my evolution over the years is also a reason to celebrate. It’s always important to remember where we started, and I reserve this place for a project that holds enormous sentimental value for me. \n\n In this project, I created a small quiz game, with questions and answers, where the user has a limited time to respond. At the end, a score is displayed showing the total and partial results.",
+    "button_text_1": "View Project",
+    "button_text_2": "GitHub"
+  },
+  "ContactSection": {
+    "title_shiny_1": "Let's Connect!",
+    "description_1": "If my work and skills caught your attention, feel free to reach out to me through the social networks below.",
+    "description_2": "Let's build amazing projects and products together!",
+    "button_text_1": "Start a conversation"
+  },
+  "FooterSection": {
+    "copy": "All rights reserved."
+  }
+}

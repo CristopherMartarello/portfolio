@@ -1,0 +1,65 @@
+{
+  "HeroSection": {
+    "greetings": "Olá, eu sou o Cristopher!",
+    "title": "Desenvolvedor Front-end",
+    "description": "Trabalhei em diversos projetos front-end, desde pequenos websites até grandes aplicações web. Essa experiência prática me permitiu desenvolver habilidades que me ajudam a criar soluções digitais.",
+    "resume": "Meu Resumo"
+  },
+  "HeaderSection": {
+    "about": "Sobre mim",
+    "projects": "Projetos",
+    "contact": "Contatos",
+    "english_select": "Inglês",
+    "portuguese_select": "Português"
+  },
+  "AboutSection": {
+    "title": "Conectando propósitos com",
+    "title_shiny": "presença digital e personalidade",
+    "item_list_1": "Desenvolvimento ágil e escalável",
+    "item_list_2": "Soluções criativas e inovadoras",
+    "item_list_3": "Design moderno e responsivo",
+    "item_list_4": "Aplicações seguras e confiáveis",
+    "item_list_5": "Performance otimizada",
+    "item_list_6": "Hospedagem e deploy",
+    "title_shiny_2": "Quem sou eu?",
+    "blur_text_1": "Sou Cristopher Martarello Derossi, conto com +2 anos de experiência profissional no desenolvimento de aplicações web e experiências digitais. Trabalhei também em diferentes projetos afim de desenvolver as minhas habilidades como desenvolvedor.",
+    "blur_text_2": "Atualmente estou no último ano do curso de Ciência da Computação no Instituto Federal de Santa Catarina (IFSC) e complemento os meus estudos com cursos preparatórios na área de desenvolvimento web.",
+    "timeline_item_1": "Primeiro contato com a programação",
+    "timeline_item_2": "Curso de Inglês completo FISK",
+    "timeline_item_3": "Ingresso ao IFSC & Projetos (Ciência da Computação)",
+    "timeline_item_4": "Desenvolvedor Front-end e Suporte na Box360, empresa de software",
+    "timeline_item_5": "Cursos profissionalizantes, projetos e TCC",
+    "title_shiny_3": "Minhas Especialidades",
+    "accordion_title_1": "Desenvolvimento",
+    "accordion_content_1": "Sou desenvolvedor de software com foco em Front-end mas com competências e habilidades para o Back-end. Atuo na construção de websites modernos e no desenvolvimento de sistemas, proporcionando a transformação de ideias em um produto real.",
+    "accordion_title_2": "UI/UX Design",
+    "accordion_content_2": "Apesar de possuir conhecimentos para ambas as stacks, meu diferencial está no Front-end. Sou detalhista e criativo para codificar aplicações modernas, intuitivas e responsivas, focando sempre na melhor experiência do usuário.",
+    "accordion_title_3": "Colaboração e Sociedade",
+    "accordion_content_3": "Acredito que grandes soluções nascem do trabalho em equipe e da colaboração, unindo a tecnologia e propósito para gerar impacto real na sociedade."
+  },
+  "ProjectsSection": {
+    "title_shiny_1": "Trabalhos Selecionados",
+    "description": "Através desse compilado de projetos selecionados, conheça um pouco do meu trabalho e as tecnologias utilizadas.",
+    "project_title_1": "FSW Food",
+    "project_description_1": "Esse projeto foi um dos mais desafiadores e um marco profissional. Meu primeiro projeto de grande complexidade que proporcionou um salto gigantesco em meu conhecimento. \n\n A ideia principal desse projeto é simular um aplicativo web de pedidos de comida, algo similar ao IFood. \n\n O cliente é capaz de escolher os produtos, gerenciar um carrinho de pedidos, acessar os diferentes restaurantes, favoritar restaurantes e acompanhar os pedidos realizados.",
+    "project_title_2": "FSW Finance AI",
+    "project_description_2": "O Finance AI é uma plataforma que visa possibilitar o usuário a melhor gerir as suas finanças, tendo controle total de suas despesas, receitas e investimentos! \n\n Conta também com a geração de relatórios inteligentes das finanças através da integração com a API de uma IA conversacional e com planos de assinatura utilizando integração com Stripe.\n\nÉ uma aplicação web para Desktop completa que possui várias camadas de complexidade e várias integrações para o seu funcionamento.",
+    "project_title_3": "Bankboost",
+    "project_description_3": "Neste projeto, abordei a criação de uma landing page de um banco digital, focando em uma proposta moderna e atrativa visualmente. \n\n Com os conhecimentos adquiridos foi possível aplicar uma estilização moderna e harmônica, majoritariamente baseada em SCSS e orientada por protótipos do Figma. \n\nAlém disso, foquei na responsividade e no tratamento dos mais diversos dispositivos, garantindo que o usuário tenha uma boa experiência em qualquer dispositivo que ele esteja utilizando para visualizar a página.",
+    "project_title_4": "Cloudboost",
+    "project_description_4": "Para este projeto também abordei a criação de uma landing page, mas dessa vez para uma empresa de marketing, mantendo o foco em algo miminalista e moderno. \n\n A estilização foi majoritariamente baseada em SCSS e orientada por protótipos do Figma. \n\n A responsividade também foi o foco do projeto, garantindo que o usuário tenha uma ótima experiência independentemente do dispositivo de acesso.",
+    "project_title_5": "Projeto Quiz",
+    "project_description_5": "Meu primeiro projeto realizado em React.js! \n\n Observar a evolução durante o decorrer dos anos também é motivo de celebração. Sempre é importante lembrarmos de onde começamos e reservo esse lugar para um projeto que tem valor sentimental enorme para mim. \n\n Nesse projeto realizei um pequeno jogo de quiz, perguntas e respostas, onde o usuário tem um determinado tempo para responder. No final, é exibido uma pontuação com o resultado total de acertos e parciais.",
+    "button_text_1": "Ver Projeto",
+    "button_text_2": "GitHub"
+  },
+  "ContactSection": {
+    "title_shiny_1": "Entre em contato comigo!",
+    "description_1": "Se o meu trabalho e minhas habilidades chamaram a sua atenção, entre em contato comigo pelas redes sociais abaixo.",
+    "description_2": "Vamos juntos construir projetos e produtos incríveis!",
+    "button_text_1": "Enviar uma mensagem"
+  },
+  "FooterSection": {
+    "copy": "Todos os direitos reservados."
+  }
+}
