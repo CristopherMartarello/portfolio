@@ -6,7 +6,6 @@ export function TypewriterEffectSmoothEffect() {
   const greetingText = t("greetings");
 
   const words = greetingText.split(" ").map((word) => {
-    console.log(word);
     if (word.includes("Cristopher!")) {
       return {
         text: word,

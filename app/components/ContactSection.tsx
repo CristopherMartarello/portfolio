@@ -50,7 +50,7 @@ const ContactSection = () => {
       className="w-full flex flex-col dark:bg-brand-dark-blue/[0.90] bg-brand-blue-50 antialiased relative overflow-visible"
     >
       <Container>
-        <div className="flex flex-col items-center justify-center mb-20">
+        <div className="flex flex-col items-center justify-center m-20">
           <ShinyText
             text={t("title_shiny_1")}
             disabled={false}

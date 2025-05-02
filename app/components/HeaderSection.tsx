@@ -15,6 +15,8 @@ import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { useTheme } from "../context/ThemeContext";
 import { useTranslations } from "next-intl";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
+import { Menu } from "lucide-react";
 
 const HeaderSection = () => {
   const [language, setLanguage] = useState("portuguese");
@@ -50,7 +52,7 @@ const HeaderSection = () => {
             alt="Logo cmd"
           />
           <div className="flex items-center gap-10">
-            <div className="flex text-2xl items-center gap-16">
+            <div className="hidden md:flex text-2xl items-center gap-16">
               <NavbarSpan href="#about-me" text={t("about")} />
               <NavbarSpan href="#projects" text={t("projects")} />
               <NavbarSpan href="#contact" text={t("contact")} />
@@ -68,14 +70,14 @@ const HeaderSection = () => {
                       {language === "portuguese" ? (
                         <>
                           <FlagForBrazil />
-                          <span className="font-semibold text-lg text-brand-blue-900 dark:text-white">
+                          <span className="hidden sm:inline font-semibold sm:text-lg text-brand-blue-900 dark:text-white">
                             {t("portuguese_select")}
                           </span>
                         </>
                       ) : language === "english" ? (
                         <>
                           <FlagForUnitedStates />
-                          <span className="font-semibold text-lg text-brand-blue-900 dark:text-white">
+                          <span className="hidden sm:inline font-semibold sm:text-lg text-brand-blue-900 dark:text-white">
                             {t("english_select")}
                           </span>
                         </>
@@ -90,7 +92,7 @@ const HeaderSection = () => {
                   <SelectItem value="portuguese">
                     <span className="flex items-center gap-4">
                       <FlagForBrazil />
-                      <span className="font-semibold text-lg text-brand-blue-900 dark:text-white">
+                      <span className="font-semibold sm:text-lg text-brand-blue-900 dark:text-white">
                         {t("portuguese_select")}
                       </span>
                     </span>
@@ -98,7 +100,7 @@ const HeaderSection = () => {
                   <SelectItem value="english">
                     <span className="flex items-center gap-4">
                       <FlagForUnitedStates />
-                      <span className="font-semibold text-lg text-brand-blue-900 dark:text-white">
+                      <span className="font-semibold sm:text-lg text-brand-blue-900 dark:text-white">
                         {t("english_select")}
                       </span>
                     </span>
