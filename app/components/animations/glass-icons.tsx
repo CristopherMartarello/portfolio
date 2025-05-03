@@ -33,18 +33,19 @@ const GlassIcons: React.FC<GlassIconsProps> = ({ items, className }) => {
 
   return (
     <div
-      className={`grid gap-[5em] grid-cols-2 md:grid-cols-5 mx-auto py-[3em] overflow-visible ${
-        className || ""
-      }`}
+      className={`grid gap-[5em] grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mx-auto py-[3em] overflow-visible ${className || ""
+        }`}
     >
       {items.map((item, index) => (
         <Link href={item.url} target="_blank" key={index}>
           <button
             type="button"
             aria-label={item.label}
-            className={`relative bg-transparent outline-none w-[7rem] h-[7rem] [perspective:24em] [transform-style:preserve-3d] [-webkit-tap-highlight-color:transparent] group ${
-              item.customClass || ""
-            }`}
+            className={`relative bg-transparent outline-none 
+          w-[5rem] h-[5rem] sm:w-[6rem] sm:h-[6rem] md:w-[7rem] md:h-[7rem] 
+          [perspective:24em] [transform-style:preserve-3d] 
+          [-webkit-tap-highlight-color:transparent] group 
+          ${item.customClass || ""}`}
           >
             {/* Back layer */}
             <span
@@ -63,7 +64,7 @@ const GlassIcons: React.FC<GlassIconsProps> = ({ items, className }) => {
               }}
             >
               <span
-                className="m-auto w-[3rem] h-[3rem] flex items-center justify-center"
+                className="m-auto w-[1.75rem] h-[1.75rem] sm:w-[2.25rem] sm:h-[2.25rem] md:w-[3rem] md:h-[3rem] flex items-center justify-center"
                 aria-hidden="true"
               >
                 {item.icon}
@@ -71,7 +72,7 @@ const GlassIcons: React.FC<GlassIconsProps> = ({ items, className }) => {
             </span>
 
             {/* Label */}
-            <span className="absolute top-full left-0 right-0 text-center whitespace-nowrap leading-[2] text-lg opacity-0 transition-[opacity,transform] duration-300 ease-[cubic-bezier(0.83,0,0.17,1)] translate-y-0 group-hover:opacity-100 dark:group-hover:text-white group-hover:text-zinc-800 group-hover:[transform:translateY(20%)]">
+            <span className="absolute top-full left-0 right-0 text-center whitespace-nowrap leading-[2] text-sm sm:text-base md:text-lg opacity-0 transition-[opacity,transform] duration-300 ease-[cubic-bezier(0.83,0,0.17,1)] translate-y-0 group-hover:opacity-100 dark:group-hover:text-white group-hover:text-zinc-800 group-hover:[transform:translateY(20%)]">
               {item.label}
             </span>
           </button>

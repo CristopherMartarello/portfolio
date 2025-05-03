@@ -55,13 +55,13 @@ const ContactSection = () => {
             text={t("title_shiny_1")}
             disabled={false}
             speed={2}
-            className="text-5xl font-semibold font-poppins"
+            className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold font-poppins"
           />
           <div className="flex flex-col items-center space-y-10">
-            <span className="text-3xl mt-10 dark:text-white text-zinc-800 font-semibold">
+            <span className="text-xl md:text-2xl lg:text-2xl xl:text-3xl mt-10 dark:text-white text-zinc-800 font-semibold text-center">
               {t("description_1")}
             </span>
-            <span className="text-3xl dark:text-white text-zinc-800 font-semibold">
+            <span className="text-xl md:text-2xl lg:text-2xl xl:text-3xl dark:text-white text-zinc-800 font-semibold text-center">
               {t("description_2")}
             </span>
             <Link
