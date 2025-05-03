@@ -35,7 +35,9 @@ export function HeroSection() {
             <p className="dark:text-zinc-400 text-zinc-600 text-xl md:text-2xl lg:text-2xl xl:text-2xl">
               {t("description")}
             </p>
-            <Button text={t("resume")} />
+            <a href="/curriculo.pdf" target="_blank" rel="noopener noreferrer">
+              <Button text={t("resume")} />
+            </a>
           </div>
 
           {/* Direita */}
