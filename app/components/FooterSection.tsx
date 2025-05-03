@@ -8,10 +8,10 @@ const FooterSection = () => {
       <div className="w-full py-10 flex flex-col bg-brand-blue-900/[0.90] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Container>
           <div className="flex items-center justify-between">
-            <span className="text-xl">
+            <span className="text-base md:text-xl">
               © 2025 Cristopher Martarello Derossi.
             </span>
-            <span className="text-xl">{t("copy")}</span>
+            <span className="hidden md:block md:text-xl">{t("copy")}</span>
           </div>
         </Container>
       </div>
