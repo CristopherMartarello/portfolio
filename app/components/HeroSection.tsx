@@ -56,7 +56,7 @@ export function HeroSection() {
         <InfiniteMovingCards
           items={competencies}
           direction="left"
-          speed="slow"
+          speed="normal"
         />
       </div>
     </div>
