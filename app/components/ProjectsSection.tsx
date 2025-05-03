@@ -13,7 +13,7 @@ const ProjectsSection = () => {
       className="h-[100vh] w-full flex flex-col dark:bg-brand-dark-blue/[0.90] bg-brand-blue-50 antialiased relative overflow-hidden"
     >
       <Container>
-        <div className="flex gap-4 mt-40">
+        <div className="flex gap-4 mt-10 md:mt-24 lg:mt-40">
           <ShinyText
             text={t("title_shiny_1")}
             disabled={false}

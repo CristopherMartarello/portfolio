@@ -41,12 +41,12 @@ const AboutSection = () => {
       id="about-me"
       className="w-full flex flex-col dark:bg-brand-dark-blue/[0.90] bg-brand-blue-50 antialiased relative overflow-visible"
     >
-      <GoogleGeminiEffectDemo />
+      {/* <GoogleGeminiEffectDemo /> */}
       <Container>
         <div className="flex justify-between">
           {/* DIREITA */}
-          <div className="w-full">
-            <h1 className="text-brand-dark-blue dark:text-white font-poppins text-6xl font-semibold">
+          <div className="w-full justify-center text-center">
+            <h1 className="text-brand-dark-blue dark:text-white font-poppins text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold">
               {t("title")}{" "}
               <span className="font-poppins text-brand-blue-500 leading-relaxed">
                 <ShinyText
@@ -59,7 +59,7 @@ const AboutSection = () => {
             </h1>
           </div>
         </div>
-        <div className="flex justify-center mt-24 flex-wrap space-x-10 gap-12">
+        <div className="flex justify-center mt-10 md:mt-24 flex-wrap space-x-10 gap-12">
           <ItemList icon={<Code color="#2563EB" />} text={t("item_list_1")} />
           <ItemList
             icon={<LayoutDashboard color="#2563EB" />}
@@ -76,31 +76,32 @@ const AboutSection = () => {
           <ItemList icon={<Rocket color="#2563EB" />} text={t("item_list_5")} />
           <ItemList icon={<Cloud color="#2563EB" />} text={t("item_list_6")} />
         </div>
-        <div className="flex justify-center items-center gap-4 mt-96">
+        <div className="hidden dark:block absolute left-1/2 top-0 -translate-x-1/2 w-[65vw] h-[65vw] bg-gradient-to-br from-blue-500/30 to-purple-500/20 blur-[100px] rounded-full z-[-1] shadow-[0_0_100px_20px_rgba(99,102,241,0.15)]" />
+        <div className="flex justify-center items-center gap-4 mt-16 md:mt-24">
           <ShinyText
             text={t("title_shiny_2")}
             disabled={false}
             speed={2}
-            className="font-poppins text-5xl font-semibold"
+            className="font-poppins text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold"
           />
         </div>
-        <div className="flex flex-col justify-center items-center mt-20 font-semibold">
+        <div className="flex flex-col justify-center items-center mt-10 md:mt-20 font-semibold">
           <BlurText
             text={t("blur_text_1")}
             delay={30}
             animateBy="words"
             direction="bottom"
-            className="text-3xl mb-8"
+            className="text-xl md:text-2xl lg:text-2xl xl:text-3xl text-center justify-center mb-8"
           />
           <BlurText
             text={t("blur_text_2")}
             delay={30}
             animateBy="words"
             direction="bottom"
-            className="text-3xl"
+            className="text-xl md:text-2xl lg:text-2xl xl:text-3xl text-center justify-center"
           />
         </div>
-        <div className="relative flex justify-between items-center my-60 px-8">
+        <div className="relative flex flex-col md:flex-row md:justify-between items-start md:items-center my-24 md:my-60 px-8 gap-24">
           <Timeline />
           <TimelineItem
             date="2021"
@@ -132,10 +133,11 @@ const AboutSection = () => {
           text={t("title_shiny_3")}
           disabled={false}
           speed={2}
-          className="font-poppins text-5xl font-semibold"
+          className="font-poppins text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold md:mt-20"
         />
-        <div className="flex justify-between gap-10">
-          <div className="relative w-2/4 mt-[5rem]">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:gap-20 mt-10 md:mt-20">
+          {/* Accordion */}
+          <div className="w-full">
             <Accordion
               type="single"
               defaultValue="item-1"
@@ -173,7 +175,9 @@ const AboutSection = () => {
               </AccordionItem>
             </Accordion>
           </div>
-          <div className="relative flex w-[60rem] h-[40rem]">
+
+          {/* Mockups */}
+          <div className="relative w-full max-w-[60rem] h-[40rem] flex items-center justify-center">
             <motion.div
               animate={{ y: [0, -5, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -184,7 +188,7 @@ const AboutSection = () => {
                 alt="Mockup Macbook"
                 width={600}
                 height={600}
-                className="object-cover rounded-xl"
+                className="object-contain rounded-xl"
               />
             </motion.div>
             <motion.div
@@ -197,7 +201,7 @@ const AboutSection = () => {
                 alt="Mockup Iphone"
                 width={150}
                 height={150}
-                className="object-cover rounded-xl z-10"
+                className="object-contain rounded-xl z-10"
               />
             </motion.div>
           </div>

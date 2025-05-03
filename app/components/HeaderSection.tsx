@@ -15,8 +15,6 @@ import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { useTheme } from "../context/ThemeContext";
 import { useTranslations } from "next-intl";
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
-import { Menu } from "lucide-react";
 
 const HeaderSection = () => {
   const [language, setLanguage] = useState("portuguese");
