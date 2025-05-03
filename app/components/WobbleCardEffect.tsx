@@ -32,35 +32,39 @@ export function WobbleCardEffect({
 }: LayoutGridEffectProps) {
   const t = useTranslations("ProjectsSection");
   return (
-    <div className="flex py-20 space-x-20">
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+    <div className="flex flex-col 2xl:flex-row py-10 md:py-20 2xl:space-x-20 gap-y-12">
+      {/* grid de imagens */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto w-full">
         {images.map((image, index) => (
           <ImageCard
             key={index}
             src={image.src}
             alt={image.alt}
-            objectFit="fit"
-            className={image.className}
+            objectFit="cover"
+            className={`${index === 0 ? 'block' : 'hidden lg:block'
+              } ${image.className}`}
             priority={index === 0}
           />
         ))}
       </div>
-      <div className="flex flex-col w-full py-28 font-semibold">
+
+      {/* texto e botões */}
+      <div className="flex flex-col w-full py-10 2xl:py-28 font-semibold">
         <div className="flex w-full justify-between items-center font-semibold">
-          <h1 className="font-poppins text-4xl dark:text-white text-zinc-800">
+          <h1 className="font-poppins text-2xl md:text-3xl lg:text-3xl xl:text-4xl dark:text-white text-zinc-800">
             {title}
           </h1>
-          <p className="font-poppins text-2xl dark:text-white text-zinc-800">
+          <p className="font-poppins text-xl md:text-2xl lg:text-2xl xl:text-2xl dark:text-white text-zinc-800">
             {date}
           </p>
         </div>
-        <div className="flex items-center gap-4 my-10">{stacks}</div>
-        <div className="mt-10 text-2xl flex flex-grow whitespace-pre-line dark:text-white text-zinc-800">
+        <div className="flex flex-wrap items-center gap-4 my-10">{stacks}</div>
+        <div className="mt-10 text-lg md:text-xl lg:text-xl xl:text-2xl flex flex-grow whitespace-pre-line dark:text-white text-zinc-800">
           {description}
         </div>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-6 mt-10">
           <Link
-            href={`${projectLink}`}
+            href={projectLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -70,7 +74,7 @@ export function WobbleCardEffect({
             />
           </Link>
           <Link
-            href={`${githubLink}`}
+            href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
           >

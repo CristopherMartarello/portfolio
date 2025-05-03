@@ -37,73 +37,74 @@ export const SwiperEffect = () => {
   const t = useTranslations("ProjectsSection");
 
   return (
-    <Swiper
-      modules={[Navigation, Pagination, Scrollbar, Autoplay, A11y]}
-      spaceBetween={50}
-      slidesPerView={1}
-      navigation={{}}
-      fadeEffect={{ crossFade: true }}
-      speed={1500}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-      className="w-10/12"
-    >
-      <SwiperSlide className="px-32">
-        <WobbleCardEffect
-          images={imagesFood}
-          stacks={<FswFoodsStacks />}
-          description={t("project_description_1")}
-          title={t("project_title_1")}
-          date={"2024"}
-          projectLink={"https://fsw-foods-seven.vercel.app"}
-          githubLink={"https://github.com/CristopherMartarello/fsw-foods.git"}
-        />
-      </SwiperSlide>
-      <SwiperSlide className="px-32">
-        <WobbleCardEffect
-          images={imagesFinance}
-          stacks={<FswFinanceAiStacks />}
-          description={t("project_description_2")}
-          title={t("project_title_2")}
-          date={"2025"}
-          projectLink="https://fsw-ai-finance.vercel.app"
-          githubLink="https://github.com/CristopherMartarello/fsw-finance-ai.git"
-        />
-      </SwiperSlide>
-      <SwiperSlide className="px-32">
-        <WobbleCardEffect
-          images={imagesBankBoost}
-          stacks={<BankboostStacks />}
-          description={t("project_description_3")}
-          title={t("project_title_3")}
-          date={"2025"}
-          projectLink="https://bank-boost.vercel.app"
-          githubLink="https://github.com/CristopherMartarello/bank-boost.git"
-        />
-      </SwiperSlide>
-      <SwiperSlide className="px-32">
-        <WobbleCardEffect
-          images={imagesCloudBoost}
-          stacks={<CloudboostStacks />}
-          description={t("project_description_4")}
-          title={t("project_title_4")}
-          date={"2025"}
-          projectLink="https://cloud-boost-eta.vercel.app"
-          githubLink="https://github.com/CristopherMartarello/cloud-boost.git"
-        />
-      </SwiperSlide>
-      <SwiperSlide className="px-32">
-        <WobbleCardEffect
-          images={imagesQuiz}
-          stacks={<QuizStacks />}
-          description={t("project_description_5")}
-          title={t("project_title_5")}
-          date={"2023"}
-          projectLink="https://projeto-quiz-one.vercel.app"
-          githubLink="https://github.com/CristopherMartarello/projeto-quiz.git"
-        />
-      </SwiperSlide>
-    </Swiper>
+    <>
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, Autoplay, A11y]}
+        spaceBetween={50}
+        slidesPerView={1}
+        pagination={{clickable: true}}
+        fadeEffect={{ crossFade: true }}
+        speed={1500}
+        className="w-10/12 custom-swiper-pagination"
+      >
+
+        <SwiperSlide className="md:px-32">
+          <WobbleCardEffect
+            images={imagesFood}
+            stacks={<FswFoodsStacks />}
+            description={t("project_description_1")}
+            title={t("project_title_1")}
+            date={"2024"}
+            projectLink={"https://fsw-foods-seven.vercel.app"}
+            githubLink={"https://github.com/CristopherMartarello/fsw-foods.git"}
+          />
+        </SwiperSlide>
+        <SwiperSlide className="md:px-32">
+          <WobbleCardEffect
+            images={imagesFinance}
+            stacks={<FswFinanceAiStacks />}
+            description={t("project_description_2")}
+            title={t("project_title_2")}
+            date={"2025"}
+            projectLink="https://fsw-ai-finance.vercel.app"
+            githubLink="https://github.com/CristopherMartarello/fsw-finance-ai.git"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="md:px-32">
+          <WobbleCardEffect
+            images={imagesBankBoost}
+            stacks={<BankboostStacks />}
+            description={t("project_description_3")}
+            title={t("project_title_3")}
+            date={"2025"}
+            projectLink="https://bank-boost.vercel.app"
+            githubLink="https://github.com/CristopherMartarello/bank-boost.git"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="md:px-32">
+          <WobbleCardEffect
+            images={imagesCloudBoost}
+            stacks={<CloudboostStacks />}
+            description={t("project_description_4")}
+            title={t("project_title_4")}
+            date={"2025"}
+            projectLink="https://cloud-boost-eta.vercel.app"
+            githubLink="https://github.com/CristopherMartarello/cloud-boost.git"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="md:px-32">
+          <WobbleCardEffect
+            images={imagesQuiz}
+            stacks={<QuizStacks />}
+            description={t("project_description_5")}
+            title={t("project_title_5")}
+            date={"2023"}
+            projectLink="https://projeto-quiz-one.vercel.app"
+            githubLink="https://github.com/CristopherMartarello/projeto-quiz.git"
+          />
+        </SwiperSlide>
+      </Swiper>
+    </>
   );
 };
+

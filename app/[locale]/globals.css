@@ -121,3 +121,30 @@ a {
     @apply bg-background text-foreground;
   }
 }
+
+.custom-swiper-pagination .swiper-pagination-bullets {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #d4d4d8; 
+  opacity: 1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet:hover {
+  transform: scale(1.2);
+  background-color: #a1a1aa; 
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #3B82F6; 
+  transform: scale(1.4);
+}
+
