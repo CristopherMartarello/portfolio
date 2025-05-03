@@ -16,7 +16,6 @@ import { GraduationCapIcon } from "../icons/GraduationIcon";
 import { CompanyIcon } from "../icons/CompanyIcon";
 import { RocketIcon } from "../icons/RocketIcon";
 
-import { GoogleGeminiEffectDemo } from "./GoogleGeminiEffect";
 import Container from "./Container";
 import ItemList from "./ItemList";
 import ShinyText from "./animations/shiny-text";
@@ -41,7 +40,6 @@ const AboutSection = () => {
       id="about-me"
       className="w-full flex flex-col dark:bg-brand-dark-blue/[0.90] bg-brand-blue-50 antialiased relative overflow-visible"
     >
-      {/* <GoogleGeminiEffectDemo /> */}
       <Container>
         <div className="flex justify-between">
           {/* DIREITA */}
