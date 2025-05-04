@@ -20,12 +20,14 @@ export function HeroSection() {
       id="home"
       className="min-h-screen w-full flex flex-col dark:bg-brand-dark-blue/[0.90] bg-brand-blue-50 antialiased relative overflow-hidden"
     >
-      {isDark && <div className="hidden sm:block absolute inset-0  pointer-events-none">
-        <Spotlight />
-      </div>}
+      {isDark && (
+        <div className="hidden sm:block absolute inset-0  pointer-events-none">
+          <Spotlight />
+        </div>
+      )}
       <HeaderSection />
       <Container>
-        <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-10">
+        <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-10 lg:mt-20">
           {/* Esquerda */}
           <div className="max-w-[64.5rem] space-y-8">
             <TypewriterEffectSmoothEffect />
@@ -41,8 +43,10 @@ export function HeroSection() {
           </div>
 
           {/* Direita */}
-          <div className="relative mt-10 ml-0 sm:ml-10 md:ml-10 lg:ml-32 xl:ml-40
-                w-96 h-96 sm:w-[24rem] sm:h-[28rem] md:w-[24rem] md:h-[28rem] lg:w-[40rem] lg:h-[48rem] xl:w-[42rem] xl:h-[50rem]">
+          <div
+            className="relative mt-10 ml-0 sm:ml-10 md:ml-10 lg:ml-32 xl:ml-40
+                w-96 h-96 sm:w-[24rem] sm:h-[28rem] md:w-[24rem] md:h-[28rem] lg:w-[40rem] lg:h-[48rem] xl:w-[42rem] xl:h-[50rem]"
+          >
             <Image
               src="/cris_frontal.jpg"
               alt="Picture of the author"
