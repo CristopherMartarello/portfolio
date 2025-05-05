@@ -4,6 +4,7 @@ import { ExternalLinkIcon } from "../icons/ExternalLinkIcon";
 import { GithubIcon } from "../icons/GitHubIcon";
 import Button from "./Button";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 type Image = {
   src: string;
@@ -34,18 +35,34 @@ export function WobbleCardEffect({
   return (
     <div className="flex flex-col 2xl:flex-row py-10 md:py-20 2xl:space-x-20 gap-y-12">
       {/* grid de imagens */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto w-full">
-        {images.map((image, index) => (
-          <ImageCard
-            key={index}
-            src={image.src}
-            alt={image.alt}
-            objectFit="cover"
-            className={`${index === 0 ? 'block' : 'hidden lg:block'
-              } ${image.className}`}
-            priority={index === 0}
-          />
-        ))}
+      <div className="max-w-5xl mx-auto w-full">
+        {/* Mobile: apenas a primeira imagem, sem wobble */}
+        <div className="lg:hidden">
+          <div className={`min-h-0 flex items-center ${images[0].className}`}>
+            <Image
+              src={images[0].src}
+              alt={images[0].alt}
+              width={800}
+              height={600}
+              className="rounded-2xl object-fill w-full h-full"
+              priority
+            />
+          </div>
+        </div>
+
+        {/* Desktop: todas as imagens com WobbleCard (ImageCard) */}
+        <div className="hidden lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {images.map((image, index) => (
+            <ImageCard
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              objectFit="cover"
+              className={image.className}
+              priority={index === 0}
+            />
+          ))}
+        </div>
       </div>
 
       {/* texto e botões */}
@@ -63,21 +80,13 @@ export function WobbleCardEffect({
           {description}
         </div>
         <div className="flex items-center gap-6 mt-10">
-          <Link
-            href={projectLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href={projectLink} target="_blank" rel="noopener noreferrer">
             <Button
               icon={<ExternalLinkIcon width={"3rem"} height={"3rem"} />}
               text={t("button_text_1")}
             />
           </Link>
-          <Link
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href={githubLink} target="_blank" rel="noopener noreferrer">
             <Button
               icon={<GithubIcon width={"3rem"} height={"3rem"} />}
               text={t("button_text_2")}
