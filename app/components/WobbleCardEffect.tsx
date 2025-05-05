@@ -57,7 +57,7 @@ export function WobbleCardEffect({
               key={index}
               src={image.src}
               alt={image.alt}
-              objectFit="cover"
+              objectFit="fit"
               className={image.className}
               priority={index === 0}
             />

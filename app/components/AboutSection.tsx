@@ -147,7 +147,7 @@ const AboutSection = () => {
                     <Code2 /> {t("accordion_title_1")}
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-2xl dark:text-zinc-400">
+                <AccordionContent className="text-xl md:text-2xl lg:text-2xl xl:text-2xl dark:text-zinc-400">
                   {t("accordion_content_1")}
                 </AccordionContent>
               </AccordionItem>
@@ -157,7 +157,7 @@ const AboutSection = () => {
                     <PaintBucket /> {t("accordion_title_2")}
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-2xl dark:text-zinc-400">
+                <AccordionContent className="text-xl md:text-2xl lg:text-2xl xl:text-2xl dark:text-zinc-400">
                   {t("accordion_content_2")}
                 </AccordionContent>
               </AccordionItem>
@@ -167,7 +167,7 @@ const AboutSection = () => {
                     <Handshake /> {t("accordion_title_3")}
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-2xl dark:text-zinc-400">
+                <AccordionContent className="text-xl md:text-2xl lg:text-2xl xl:text-2xl dark:text-zinc-400">
                   {t("accordion_content_3")}
                 </AccordionContent>
               </AccordionItem>
