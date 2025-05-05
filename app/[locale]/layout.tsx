@@ -21,8 +21,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Cristopher Martarello | Front-end Developer",
-  description: "Portfolio do Cristopher Martarello Derossi",
+  title: "Cristopher Martarello | Software Developer",
+  description: "Portfolio Profissional - Cristopher Martarello Derossi",
 };
 
 export default async function RootLayout({
