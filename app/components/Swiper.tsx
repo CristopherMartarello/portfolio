@@ -42,12 +42,11 @@ export const SwiperEffect = () => {
         modules={[Navigation, Pagination, Scrollbar, Autoplay, A11y]}
         spaceBetween={50}
         slidesPerView={1}
-        pagination={{clickable: true}}
+        pagination={{ clickable: true }}
         fadeEffect={{ crossFade: true }}
         speed={1500}
         className="w-10/12 custom-swiper-pagination"
       >
-
         <SwiperSlide className="md:px-32">
           <WobbleCardEffect
             images={imagesFood}
@@ -107,4 +106,3 @@ export const SwiperEffect = () => {
     </>
   );
 };
-
